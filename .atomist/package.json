@@ -1,0 +1,27 @@
+{
+  "name": "@russmiles/scattered-rugs",
+  "version": "0.8.0",
+  "description": "Scattered Rugs",
+  "keywords": [
+    "Atomist",
+    "Rug"
+  ],
+  "author": "Russ Miles",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/russmiles/scattered-rugs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/russmiles/scattered-rugs/issues"
+  },
+  "homepage": "https://github.com/russmiles/scattered-rugs#readme",
+  "dependencies": {
+    "@atomist/rug": "0.10.0"
+  },
+  "scripts": {
+    "rug-install": "rug install -urX",
+    "rug-test": "rug test -urX",
+    "rug-publish": "rug publish -urX"
+  }
+}

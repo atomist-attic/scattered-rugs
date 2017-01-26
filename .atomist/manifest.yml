@@ -1,0 +1,9 @@
+group: russmiles
+artifact: scattered-rugs
+version: "0.1.0"
+
+requires: "[0.10.0,1.0.0)"
+
+dependencies:
+
+extensions:
