@@ -1,8 +1,6 @@
 import { ProjectEditor } from "@atomist/rug/operations/ProjectEditor"
 import { Status, Result, Parameter } from "@atomist/rug/operations/RugOperation"
 import { Project, Pair, File } from '@atomist/rug/model/Core'
-import { PathExpression, PathExpressionEngine, TreeNode, Match } from '@atomist/rug/tree/PathExpression'
-
 
 let params: Parameter[] = [
     {
@@ -15,18 +13,14 @@ let params: Parameter[] = [
     }
 ]
 
-interface Parameters {
-    description: string
-}
-
 export let editor: ProjectEditor = {
     tags: ["simple"],
     name: "SimpleSampleEditorTS",
     description: "A simple sample Rug TypeScript editor",
     parameters: params,
-    edit(project: Project, p: Parameters): Result {
+    edit(project: Project, {description } : {description: string}) {
 
-        project.addFile("README.md", p.description);
+        project.addFile("README.md", description);
 
         return new Result(Status.Success, "README.md added to project")
     }
