@@ -12,8 +12,8 @@ var params = [
 ];
 exports.editor = {
     tags: ["simple"],
-    name: "SimpleSampleEditor",
-    description: "A simple sample TypeScript editor",
+    name: "SimpleSampleEditorTS",
+    description: "A simple sample Rug TypeScript editor",
     parameters: params,
     edit: function (project, p) {
         project.addFile("README.md", p.description);

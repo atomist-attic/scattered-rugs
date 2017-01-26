@@ -1,0 +1,12 @@
+@description "A simple sample Rug DSL editor"
+@tag "simple"
+editor SimpleSampleEditorDSL
+
+@displayName "Description"
+@description "Text to be added to the README.md"
+@minLength 1
+@validInput "Any valid text"
+param description: @any
+
+with Project
+  do addFile "README.md" description

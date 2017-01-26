@@ -21,8 +21,8 @@ interface Parameters {
 
 export let editor: ProjectEditor = {
     tags: ["simple"],
-    name: "SimpleSampleEditor",
-    description: "A simple sample TypeScript editor",
+    name: "SimpleSampleEditorTS",
+    description: "A simple sample Rug TypeScript editor",
     parameters: params,
     edit(project: Project, p: Parameters): Result {
 

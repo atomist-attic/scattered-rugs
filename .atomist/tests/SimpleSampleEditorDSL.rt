@@ -1,4 +1,4 @@
-scenario SimpleSampleEditor should just add a file called "README.md" to the target project
+scenario SimpleSampleEditorDSL should just add a file called "README.md" to the target project
 
 let description = "Hello, Rug TypeScript World!"
 
@@ -6,7 +6,7 @@ given
   Empty
 
 when
-  SimpleSampleEditor
+  SimpleSampleEditorDSL
 
 then
   fileExists "README.md"
